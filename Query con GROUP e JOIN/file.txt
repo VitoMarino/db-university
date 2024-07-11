@@ -58,7 +58,7 @@ SELECT *
 FROM `departments`
 INNER JOIN `degrees` ON `departments` . `id` = `degrees` . `department_id`
 INNER JOIN `students` ON `degrees` . `id` = `students` . `degree_id`
-ORDER BY `students` . `surname`ASC;
+ORDER BY `students` . `surname`, `students` . `name` ASC;
 
 # 5. Selezionare tutti i corsi di laurea con i relativi corsi e insegnanti
 
